@@ -13,3 +13,71 @@ img-comparison-slider.rendered {
 img-comparison-slider.rendered [slot='second'] {
   display: unset;
 }
+ .before,.after {
+    margin: 0
+}
+
+.before figcaption,.after figcaption {
+    background: #fff;
+    border: 1px solid silver;
+    border-radius: 12px;
+     opacity: .8;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 100%
+}
+
+.before figcaption {
+    left: 12px
+}
+
+.after figcaption {
+    right: 12px
+}
+
+.dan-comparation {
+    display: flex;
+    flex-direction: column
+}
+
+.dan-comparation h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+     text-align: center;
+    order: 1
+}
+
+.dan-comparation p {
+    font-size: .875rem;
+    line-height: 1.25rem;
+     text-align: center;
+    order: 2
+}
+
+img-comparison-slider {
+    order: 3
+}
+
+.dan-comparation a {
+    order: 4;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    background-color: #fff;
+    border-radius: .375rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: .625rem;
+    padding-top: .5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 700
+}
+
+img-comparison-slider.rendered {
+    border-radius: 8px;
+    margin: 10px
+}
